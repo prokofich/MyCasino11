@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.ComplexityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_comp_cs_easy"
+        android:layout_width="0dp"
+        android:background="#72a5f2"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_comp_cs_middle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_comp_tv_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="EASY"
+            android:fontFamily="@font/candal"
+            android:textSize="32sp"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/id_comp_button_go_easy"/>
+
+        <View
+            android:id="@+id/id_comp_view_easy"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_tv_easy"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_desc_easy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="3 X 3"
+            android:textColor="@color/white"
+            android:fontFamily="@font/candal"
+            android:textSize="23sp"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_view_easy"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_comp_button_go_easy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="GO"
+            android:textStyle="bold"
+            android:fontFamily="@font/candal"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintWidth_percent="0.8"
+            android:background="@drawable/background_button_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_record_easy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="best result:0"
+            android:textSize="23sp"
+            android:fontFamily="@font/candal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_button_go_easy"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/id_comp_cs_easy"
+        app:layout_constraintEnd_toStartOf="@id/id_comp_cs_middle"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_comp_cs_middle"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.34"
+        android:layout_height="match_parent"
+        android:background="#2c6bca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_comp_cs_hard"
+        app:layout_constraintStart_toEndOf="@id/id_comp_cs_easy"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_comp_tv_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="MIDDLE"
+            android:fontFamily="@font/candal"
+            android:textSize="32sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/id_comp_button_go_middle"/>
+
+        <View
+            android:id="@+id/id_comp_view_middle"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_tv_middle"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_desc_middle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="4 X 4"
+            android:textColor="@color/white"
+            android:fontFamily="@font/candal"
+            android:textSize="23sp"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_view_middle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_comp_button_go_middle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="GO"
+            android:textStyle="bold"
+            android:fontFamily="@font/candal"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintWidth_percent="0.8"
+            android:background="@drawable/background_button_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_record_middle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="best result:0"
+            android:textSize="23sp"
+            android:fontFamily="@font/candal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_button_go_middle"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/id_comp_cs_middle"
+        app:layout_constraintEnd_toStartOf="@id/id_comp_cs_hard"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_comp_cs_hard"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#0043a8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/id_comp_cs_middle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.33">
+
+        <TextView
+            android:id="@+id/id_comp_tv_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="HARD"
+            android:fontFamily="@font/candal"
+            android:textSize="32sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/id_comp_button_go_hard"/>
+
+        <View
+            android:id="@+id/id_comp_view_hard"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_tv_hard"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_desc_hard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="5 X 5"
+            android:textColor="@color/white"
+            android:fontFamily="@font/candal"
+            android:textSize="23sp"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_view_hard"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_comp_button_go_hard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="GO"
+            android:textStyle="bold"
+            android:fontFamily="@font/candal"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintWidth_percent="0.8"
+            android:background="@drawable/background_button_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/id_comp_tv_record_hard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="best result:0"
+            android:textSize="23sp"
+            android:fontFamily="@font/candal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toBottomOf="@id/id_comp_button_go_hard"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_comp_button_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="back"
+        android:textColor="@color/white"
+        android:fontFamily="@font/candal"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:background="@drawable/background_button_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.08"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
